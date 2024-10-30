@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // //Definir nuestra clase
+        // class Persona {
+
+        //     //Llamar al constructor
+        //     constructor(nombre, edad, estatura){
+        //         this.nombre = nombre;
+        //         this.edad = edad;
+        //         this.estatura = estatura;
+        //     }
+
+        //     //crear Metodo
+        //     mostrarInformacion(){
+        //         alert(`El nombre es ${this.nombre}, la edad es ${this.edad} y la estatura es ${this.estatura}`);
+        //     }
+        // }
+
+        // //crear instancia    
+        // const docente=new Persona ('Jhon',29,1.75);
+        // const estudiante = new Persona('Mario',23,1.54)
+        
+        // //mostrarInformacion
+        // docente.mostrarInformacion();
+        // estudiante.mostrarInformacion();
+        //ejercicio2
+        // class Persona {
+        //     constructor(nombre, edad, nacionalidad){
+        //         if (edad <= 17 && edad >0) {
+        //             alert('La persona debe de ser mayor de edad')
+        //         }
+        //         this.nombre = nombre;
+        //         this.edad = edad;
+        //         this.nacionalidad = nacionalidad;
+        //     }
+        //     mostrarDatos(){
+        //         alert(`Nombre: ${this.nombre}, Edad: ${this.edad}, Nacionalidad: ${this.nacionalidad}`);
+        //     }
+        // }
+
+        // //crear la instancia
+        // const nombre = prompt ('Ingresa tu nombre');
+        // const edad = prompt ('Ingresa tu edad');
+        // const nacionalidad = prompt ('Ingresa tu nacionalidad');
+
+        // try {
+        //     const estudiante = new Persona(nombre, edad, nacionalidad);
+        //     estudiante.mostrarDatos();
+
+        // } catch (error) {
+        //     console.log(error);
+        // }    
+
+        // class Rectangulo {
+        //     constructor(base, altura) {
+        //         this.base = base; //propiedades publicas
+        //         this.altura = altura;
+        //     }
+    
+        //     get_area() {
+        //         return this.base*this.altura;
+        //     }
+
+        //     get_perimetro() {
+        //         return 2*(this.base + this.altura);
+        //     }
+        // }
+
+        // //crar instancia
+        // const rectangulo =  new Rectangulo(10,5);
+        // console.log('Instancia', rectangulo);
+        // console.log('Calculo del area',rectangulo.get_area());
+        // console.log('Calculo del perimetro',rectangulo.get_perimetro());
+        
+        // //Clase de cuenta de banco
+        // class CuentaPersonal {
+        //     #saldo //con # indico que es una propiedad privada
+
+        //     constructor(saldoInicial){
+        //         this.#saldo = saldoInicial;
+        //     }
+
+        //     depositar(cantidad){
+        //         this.#saldo += cantidad;
+        //     }
+
+        //     mostrarSaldo(){
+        //         console.log(`El saldo es ${this.#saldo}`);
+        //     }
+        // }
+
+        // //instancia de la clase
+        // const cuenta = new CuentaPersonal(100);
+
+        // console.log(cuenta.mostrarSaldo());
+        // cuenta.depositar(50);
+        // console.log(cuenta.mostrarSaldo());
+
+        // //Clase con propiedades solo de lectura
+        // class Libro {
+        //     constructor(titulo,autor){
+        //         this.titulo = titulo;
+        //         this.autor = autor;
+        //     }
+
+        //     get_titulo(){
+        //         return this.__titulo; // el _  indica que va a ser solo de lectura
+        //     }
+        // }
+        // //instancia
+        // const book = new Libro('HP','ROWLING');
+        // console.log(book.titulo);
+
+        // book.titulo = ('Harry Poteer');
+        // console.log(book.titulo);
+         
+        //calculo del area de un cirulo
+        // class Circulo{
+        //     constructor(radio){
+        //         this.radio = radio;
+        //     }
+            
+        //     calcularArea(){
+        //         return Math.PI * this.radio **2; //pi* radio al cuadrado
+        //     }
+
+        //     calcularCircunferencia(){
+        //         return 2 * Math.PI * this.radio; //2*pi*radio
+        //     }
+        // }
+
+        // //Creamos la instancia
+        // const circulo = new Circulo(5);
+
+        // console.log(circulo.calcularArea()); //
+        // console.log(circulo.calcularCircunferencia()); //
+        
+        //HERENCIA
+        // class Forma {
+        //     type = 'Geometrica';
+        //     color = 'Naranja';
+
+        //     constructor(){
+        //         console.log('Constructor de la clase forma');
+        //     }
+
+        //     show(){
+        //         console.log(`Soy una forma ${this.type} de color ${this.color}`);                
+        //     }
+
+        //     setColor(color){
+        //         this.color = color;
+        //     }
+        // }
+
+        // const formaGeo = new Forma();
+        // formaGeo.show();
+        // formaGeo.setColor('Azul');
+        // formaGeo.show();
+        
+        // class Cuadrado extends Forma {
+        //     type = 'Cuadrado';
+
+        //     constructor(type){
+        //         super();
+        //         this.type = type;
+        //         console.log('Constructor hijo');
+        //     }
+        // }
+
+        // const cuadrado = new Cuadrado('Triangulo');
+        // cuadrado.show();
+        // cuadrado.setColor('Amarillo');
+        // cuadrado.show();
+
+        // class Animal {
+
+        //     constructor (nombre){
+        //         this.nombre = nombre;
+        //     }
+
+        //     //metodo
+        //     describe(){
+        //         return `${this.nombre}, es un animal` ;
+        //     }
+        // }
+
+        // class Pajaron extends Animal {
+        //     constructor (nombre, especie){
+        //         super(nombre);
+        //         this.especie = especie;
+        //     }
+        //     //sobreescribir descibe 
+        //     describe(){
+        //         return `${this.nombre}, es un pajaro de la especie ${this.especie}`;
+        //     }
+
+        //     volar (){
+        //         return `${this.nombre}, puede volar`;
+        //     }
+        // }
+
+        // const pajaro = new Pajaron('Pato','ave');
+        // console.log(pajaro.describe());
+        // console.log(pajaro.volar());
+        
+        //POLIMORFISMO
+        // class Empleado {
+        //     constructor (nombre, cargo){
+        //         this.nombre = nombre;
+        //         this.cargo = cargo;
+        //     }
+
+        //     describe(){
+        //         return `${this.nombre} trabaja como ${this.cargo}`
+        //     }
+        // }
+
+        // class Gerente extends Empleado {
+        //     constructor (nombre, cargo, area){
+        //         super(nombre, cargo);
+        //         this.area = area;
+        //     }
+        //     describe (){
+        //         return `${super.describe()} trabaja en el area de ${this.area}`
+        //     }
+        // }
+
+        // const gerente = new Gerente('Juan','Gerente de RRHH','Sistemas');
+        // console.log(gerente.describe());
+
+
+        class Vehiculo {
+            constructor(marca){
+                this.marca = marca;
+            }
+
+            describe(){
+                return `Este vehiculo es de la marca ${this.marca}.`;
+            }
+        }
+
+        class Carro extends Vehiculo {
+            constructor(marca, modelo){
+                super(marca);
+                this.modelo = modelo;
+            }
+            describe(){
+                return `${super.describe()}, y su modelo es ${this.modelo}`;
+            }
+        }
+
+        class Electrico extends Carro {
+            constructor(marca, modelo, bateria, vidaBateria){
+                super(marca, modelo);
+                this.bateria = bateria;
+                this.vidaBateria = vidaBateria;
+            }
+            describe(){
+                return `${super.describe()}, y tiene una bateria de ${this.bateria} y una vida de ${this.vidaBateria} horas`;
+            }
+        }
+
+        const miTesla = new Electrico ('Tesla','Model s', 'G', '5000Ah');
+        console.log(miTesla.describe());
+        
+
+
+
+    </script>
+</body>
+</html>

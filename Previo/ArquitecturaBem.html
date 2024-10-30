@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArquitecturaBem</title>
+    <style>
+        /* .nav {
+            background-color: red;
+            height: 70px;
+            display: flex;
+        }
+        .nav.logo {
+            height: 100%;  
+            background-color: white;
+        }
+        .nav_img {
+            height: 100%;
+        }
+        .nav_link {
+            color: black;
+            text-decoration: none;
+        }
+        .nav_link--blue {
+            color: blue;
+        } */
+        /* .div{
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            grid-template-rows: auto 1fr auto;
+            gap: 20px;
+            min-height: 100vh;
+        }
+        .div_header, .div_footer {
+            background-color: blueviolet;
+            color: azure;
+            text-align: center;
+            padding: 20px;
+        }
+        .div_content {
+            background-color: chocolate;
+            padding: 20px;
+        }
+        .div_sidebar {
+            background-color: yellowgreen;
+            padding: 20px;
+        }
+        .div_sidebar--other {
+            color: aliceblue;
+        } */
+        .div{
+            gap:10px
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 15px;          
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px;
+        }    
+        .button--primary {
+            background-color: blue;
+            color: aliceblue;
+        }
+        .button--secundario{
+            background-color: red;
+            color: blanchedalmond;
+        }
+        .button--send{
+            background-color: brown;
+            color: black;
+        }
+        .button--contact{
+            background-color: green;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- <header class="header">
+        <nav class="nav">
+            <div class="nav_logo">
+                <img src="./FotoPerfil.jpeg" alt="imagen" class="nav_img">
+            </div>
+            <div class="nav_links">
+                <a href="#" class="nav_link">Inicio</a>
+                <a href="#" class="nav_link">Nosotros</a>
+                <a href="#" class="nav_link nav_link--blue">Galeria</a>
+                <a href="#" class="nav_link">Contacto</a>
+            </div>
+        </nav>
+    </header> -->
+    <!-- <div class="div">
+        <header class="div_header">Divheader</header>
+        <main class="div_content">Contenido del Div</main>
+        <aside class="div_sidebar">Este es un Sidebar</aside>
+        <aside class="div_sidebar div_sidebar--other">Este es un Sidebar</aside>
+        <footer class="div_footer">Div Footer</footer>
+    </div> -->
+    
+    <div>
+        <div class="button button--primary">Bloque - nombre de la etiqueta</div>
+        <div class="button button--secundario">Elemento - etiqueta_funcionalidad</div>
+        <div class="button button--send">Modificador - etiqueta_funcionalidad--nueva</div>
+        <div class="button button--contact">contact</div>
+    </div>
+</body>
+</html>

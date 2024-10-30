@@ -1,0 +1,67 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}   
+
+:root{
+    --alineacion-centro:center
+}
+
+header{
+    background-color: forestgreen;
+    color: aliceblue;
+    text-align: var(--alineacion-centro);
+    padding: 20px 0;
+}
+
+.card_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: var(--alineacion-centro);
+    padding: 20px;
+}
+
+.card{
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0.4,0);
+    margin: 15px;
+    max-width: 300px;
+    text-align: var(--alineacion-centro);
+    transition: transform 0.5s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card_img{
+    max-width: 100px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card_titulo{
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.card_descripcion {
+    color: #555;
+    margin: 10px 0;
+}
+
+.card_precio{
+    font-size: 1.2em;
+    color:#555;
+    margin: 10px 0;
+}
+
+.card_compra{
+    background-color: #3498db;
+    border: none;
+    color: #ff4;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}

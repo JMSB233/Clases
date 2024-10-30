@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <div class="card_container">
+        <div class="card">
+            <h2 class="card-titulo">Card 1</h2>
+            <p class="card-descripcion">Descripcion de la tarjeta 1</p>
+            <button onclick="abrirModal('Card 1','Descripcion de la tarjeta 1','data:image/png;base64,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')" class="card-btn">Ver más</button>
+        </div>
+        <div class="card">
+            <h2 class="card-titulo">Card 2</h2>
+            <p class="card-descripcion">Descripcion de la tarjeta 2</p>
+            <button onclick="abrirModal()" class="card-btn">Ver más</button>
+        </div>
+        <div class="card">
+            <h2 class="card-titulo">Card 3</h2>
+            <p class="card-descripcion">Descripcion de la tarjeta 3</p>
+            <button onclick="abrirModal()" class="card-btn">Ver más</button>
+        </div>
+    </div>
+    <div id="myModel" class="modal">
+        <div class="modal-content">
+            <span onclick="cerrarModal()" class="close-btn">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-descripcion"></p>
+            <img src="" alt="Imagen modal1" id="modal-imagen">
+            <a href="" id="modal-link" target="_blank">Visita mi perfil</a>
+        </div>
+    </div>
+    <script src="script.js"></script> -->
+    <script>
+        // let texto = 'Esta es una clase de JS'
+        // console.log(texto.length);
+
+        // let valorUper = texto.toUpperCase();
+        // console.log(valorUper);
+
+        // let valorLower = texto.toLowerCase();
+        // console.log(valorLower);
+
+        // let posicion = texto.charAt(5);
+        // console.log(posicion);
+        
+        // let valorIndex = texto.indexOf('JS');
+        // console.log(valorIndex);
+        
+        // let segundo = " en Enyoi"
+        // let texto_concatenado = texto.concat(segundo);
+        // console.log(texto_concatenado);
+        
+        // let sinEspacios = segundo.trim();
+        // console.log(sinEspacios);
+        // let  frutas = [];
+
+        // frutas.push('Fresa');
+        // frutas.push('Manzana');
+        // frutas.push('Mango');
+        // frutas.push('Kiwi');
+        // console.log(frutas);
+        
+        // frutas.pop ();
+        // console.log(frutas);
+
+        // frutas.shift();
+        // console.log(frutas);
+        
+        // frutas.unshift('Naranja');
+        // console.log(frutas);
+        
+        // frutas.forEach(function(fruta){
+        //     console.log(fruta);
+            
+        // })
+
+        // console.log(frutas);
+        // let frutas_final = frutas.join('-');
+        // console.log(frutas_final);
+        
+        let email = 'jhon@gmail.com';
+        let expresRegular = /^[a-z0-9]+@[a-z0-9]+\.[a-z]{2,3}$/;
+
+        let resultado = expresRegular.test(email);
+        console.log(resultado);
+
+
+    </script>
+</body>
+</html>
